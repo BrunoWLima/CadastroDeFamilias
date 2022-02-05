@@ -8,8 +8,6 @@ namespace CadastroDeFamilias.Infra
     {
         public CadastroDeFamiliasContext(DbContextOptions<CadastroDeFamiliasContext> options) : base(options)
         {
-            //Desativando o LazyLoading pois as entidades são convertidas em ViewModel, perdendo o possivel LazyLoading
-            //this.ChangeTracker.LazyLoadingEnabled = false;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
